@@ -36,28 +36,24 @@
         <div id="wrap">
             <div id="text">
                 <div id="code">
-                    <font color="#FF0000"> <span class="say">俺的狗子宝贝</span><br>
-                        <span class="say"> </span><br>
-                        <span class="say"> 与你相遇是我的幸运</span><br>
-                        <span class="say"> </span><br>
-
-                        <span class="say">和你在一起的每一天真的很开心</span><br>
-                        <span class="say"> </span><br>
-                        <span class="say">有你的未来生活是我的向往和期待</span><br>
-                        <span class="say"> </span><br>
-                        <span class="say">俺的狗子宝贝你要好好吃饭好好睡觉</span><br>
-                        <span class="say"> </span><br>
-                        <span class="say">等俺娶你回家 --嘻嘻</span><br>
-                        <span class="say"> </span><br>
-                        <span class="say"><span class="space"></span> -- 爱你的大力--</span>
-                    </font>
+                    <div style="color:#FF0000">
+                        <p class="say">俺的狗子宝贝</p></br>
+                        <p class="say"> 与你相遇是我的幸运</p></br>
+                        <p class="say">和你在一起的每一天真的很开心</p></br>
+                        <p class="say">有你的未来生活是我的向往和期待</p></br>
+                        <p class="say">俺的狗子宝贝你要好好吃饭好好睡觉</p></br>
+                        <p class="say">等俺娶你回家 --嘻嘻</p></br>
+                        <p style="margin-left: 150px;" class="say">
+                            -- 爱你的大力--
+                        </p>
+                    </div>
                     </p>
                 </div>
             </div>
             <div id="clock-box">
                 <span class="STYLE1"></span>
-                <font color="#33CC00">俺的宝贝，自3月2日遇到你的那一刻就爱上了你</font>
-                <span class="STYLE1">已有</span>
+                <span style="color:#33CC00">俺的宝贝，自3月2日遇到你的那一刻就爱上了你</span>
+                <span class="STYLE1">这是</span>
                 <div id="clock"></div>
             </div>
             <canvas id="canvas" width="1100" height="680"></canvas>
@@ -71,12 +67,10 @@
     <script>
         (function () {
             var canvas = $('#canvas');
-
             if (!canvas[0].getContext) {
                 $("#error").show();
                 return false;
             }
-
             var width = canvas.width();
             var height = canvas.height();
             canvas.attr("width", width);
@@ -225,9 +219,7 @@
             runAsync().start();
         })();
     </script>
-    <div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
-        <p>大力的表白</p>
-    </div>
+
 </body>
 
 </html>
